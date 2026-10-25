@@ -1,0 +1,215 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff5fa;
+    color: #38283b;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #e9b8d4, #c9a5e8);
+    color: #38283b;
+}
+
+header h1 {
+    margin: 0 0 12px;
+    font-size: 32px;
+}
+
+header p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Main area */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 35px auto;
+}
+
+/* Task cards */
+.task {
+    background: #ffffff;
+    padding: 28px;
+    margin-bottom: 25px;
+    border: 1px solid #f1d8e8;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(150, 90, 130, 0.08);
+}
+
+.task h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    color: #a34d83;
+    font-size: 22px;
+}
+
+/* Inputs and select */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #dfbdd6;
+    border-radius: 8px;
+    background: #fffafd;
+    color: #38283b;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #c98cba;
+    border-color: #a34d83;
+}
+
+/* Buttons */
+button {
+    padding: 11px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #c77eb1;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #a34d83;
+    transform: translateY(-2px);
+}
+
+.buttons {
+    text-align: center;
+}
+
+/* Counter */
+#counter {
+    margin: 20px;
+    text-align: center;
+    color: #a34d83;
+    font-size: 52px;
+    font-weight: bold;
+}
+
+/* Text preview */
+#preview,
+#enterResult {
+    min-height: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff0f8;
+    overflow-wrap: anywhere;
+}
+
+/* Makeup image */
+.image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#mainImage {
+    display: block;
+    width: 350px;
+    max-width: 100%;
+    height: 260px;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #fff5fa;
+}
+
+#imageCaption {
+    margin-top: 12px;
+    color: #a34d83;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Keyboard status */
+#keyStatus {
+    color: #a34d83;
+}
+
+/* Focus and mouse events */
+.task10-area {
+    text-align: center;
+}
+
+#focusCard {
+    width: 300px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 25px;
+    border: 2px solid #d6a3ca;
+    border-radius: 14px;
+    background: #fff5fa;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#focusCard.highlight {
+    background: #f2d7eb;
+    border-color: #a34d83;
+    transform: scale(1.03);
+}
+
+#focusCard:focus {
+    outline: 3px solid #a34d83;
+    outline-offset: 4px;
+}
+
+#instruction {
+    color: #875778;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    padding: 22px;
+    text-align: center;
+    background: #ead2e7;
+    color: #38283b;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    main {
+        width: 92%;
+        margin: 20px auto;
+    }
+
+    .task {
+        padding: 20px;
+    }
+
+    .task h2 {
+        font-size: 19px;
+    }
+
+    #focusCard {
+        width: 100%;
+    }
+}
